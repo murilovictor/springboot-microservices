@@ -1,0 +1,7 @@
+.idea/
+*.iml
+*.iws
+core/target/
+course/target/
+discovery/target/
+gateway/target/

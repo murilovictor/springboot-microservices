@@ -25,9 +25,15 @@
 
 	<properties>
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+		<nimbus-jose.version>7.1</nimbus-jose.version>
 	</properties>
 
 	<dependencies>
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

@@ -27,11 +27,17 @@
 	<properties>
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 		<nimbus-jose.version>7.1</nimbus-jose.version>
+		<apache-lang3.version>3.8.1</apache-lang3.version>
 	</properties>
 
 	<dependencies>
-        <dependency>
-            <groupId>com.nimbusds</groupId>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache-lang3.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.nimbusds</groupId>
             <artifactId>nimbus-jose-jwt</artifactId>
             <version>${nimbus-jose.version}</version>
         </dependency>

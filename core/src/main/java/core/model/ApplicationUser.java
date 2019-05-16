@@ -12,7 +12,9 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
+@Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class ApplicationUser implements AbstractEntity {
 
@@ -34,6 +36,7 @@ public class ApplicationUser implements AbstractEntity {
 
     @NotNull(message = "The field 'role' is mandatory")
     @Column(nullable = false)
+    @Builder.Default
     private String role = "USER";
 
     public ApplicationUser(@NotNull ApplicationUser applicationUser) {
